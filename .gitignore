@@ -1,2 +1,5 @@
 # Project exclude paths
 /venv/
+google_key.json
+cris_error.log
+config.ini
