@@ -37,7 +37,7 @@ except:
     pass
 
 # googlesheet info
-url = 'https://docs.google.com/spreadsheets/d/1TI_buafAhuaQIwXY3azKtO2Mme7Kr1EDIwXRyNh6Jhk/edit#gid=0'
+url = config['DEFAULT'].get('sheets_url')
 gc = ps.authorize(service_file='google_key.json')
 sh = gc.open_by_url(url)
 wks = sh[0]
